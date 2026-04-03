@@ -6,7 +6,19 @@
         xmlns:local="clr-namespace:TK_"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="White">
+        <Label Content="a="  HorizontalAlignment="Left" Margin="222,108,0,0" VerticalAlignment="Top"/>
+        <Label Content="b=" HorizontalAlignment="Left" Margin="221,152,0,0" VerticalAlignment="Top"/>
+        <Label Content="c=" HorizontalAlignment="Left" Margin="223,199,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBA" ToolTip="Ввод переменной a" HorizontalAlignment="Left" Margin="251,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="TBB" ToolTip="Ввод переменной b" HorizontalAlignment="Left" Margin="251,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="TBC" ToolTip="Ввод переменной c" HorizontalAlignment="Left" Margin="251,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Введите коэффициенты" HorizontalAlignment="Left" Margin="209,69,0,0" VerticalAlignment="Top"/>
+        <Button Content="Вычислить" ToolTip="Выполнить вычисления для заданных параметров" HorizontalAlignment="Left" Margin="378,258,0,0" VerticalAlignment="Top" Click="Count_Click"/>
+        <Label Content="Решение уравнения" HorizontalAlignment="Left" Margin="209,255,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBRes" ToolTip="Результат вычисления уравнения" HorizontalAlignment="Left" Margin="209,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Label Content="Вид уравнения" HorizontalAlignment="Left" Margin="371,108,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RadioLin"  Content="линейное" ToolTip="Выбрать тип уравнения линейный" HorizontalAlignment="Left" Margin="375,140,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RadioSqr" Content="квадратное" ToolTip="Выбрать тип уравнения квадратный" HorizontalAlignment="Left" Margin="375,187,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
