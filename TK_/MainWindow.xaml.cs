@@ -1,17 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace TK_
 {
@@ -157,12 +145,12 @@ namespace TK_
                         {
                             x1 = (-b + D) / 2 * a;
                             x2 = (-b - D) / 2 * a;
-                            strRes = "${x1}, {x2}";
+                            strRes = "Корень 1: " + x1 + "\n" + "Корень 2: " + x2;
                         }
                         else if (D == 0)
                         {
                             x1 = (b) / 2 * a;
-                            strRes = "${x1}";
+                            strRes = "$Корень: " + x1;
                         }
                         else if (D < 1)
                         {
@@ -193,6 +181,15 @@ namespace TK_
         {
             TBC.Visibility = Visibility.Visible;
             LabelC.Visibility = Visibility.Visible;
+        }
+
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            TBA.Clear();
+            TBB.Clear();
+            TBC.Clear();
+            TBRes.Clear();
+            TBA.Focus();
         }
     }
 }
